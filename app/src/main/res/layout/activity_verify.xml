@@ -37,7 +37,7 @@
 
         <Button
             android:layout_gravity="center"
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnVerify"
             android:layout_marginTop="8dp"
             android:text="Verify"
             android:textSize="22sp"

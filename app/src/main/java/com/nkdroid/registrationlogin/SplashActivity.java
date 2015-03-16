@@ -22,7 +22,7 @@ public class SplashActivity extends ActionBarActivity {
             }
 
             public void onFinish() {
-                Intent intent=new Intent(SplashActivity.this,RegistrationActivity.class);
+                Intent intent=new Intent(SplashActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         }.start();
