@@ -35,7 +35,7 @@ public class LoginActivity extends ActionBarActivity {
                 if(isEmptyField(etUsername)){
                     Toast.makeText(LoginActivity.this,"Please Enter Username",Toast.LENGTH_LONG).show();
                 } else if(isEmptyField(etPassword)){
-                    Toast.makeText(LoginActivity.this,"Please Enter Username",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"Please Enter Password",Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
                     startActivity(intent);

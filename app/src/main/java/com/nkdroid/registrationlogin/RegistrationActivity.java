@@ -38,7 +38,7 @@ public class RegistrationActivity extends ActionBarActivity {
                 if(isEmptyField(etUsername)){
                     Toast.makeText(RegistrationActivity.this, "Please Enter Username", Toast.LENGTH_LONG).show();
                 } else if(isEmptyField(etPassword)){
-                    Toast.makeText(RegistrationActivity.this,"Please Enter Username",Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistrationActivity.this,"Please Enter Password",Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(RegistrationActivity.this, VerifyActivity.class);
                     startActivity(intent);
