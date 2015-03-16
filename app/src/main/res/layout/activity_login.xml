@@ -53,4 +53,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnNewRegistration"
+        android:layout_marginTop="8dp"
+        android:text="New Registration"
+        android:textSize="22sp"
+        android:textColor="#494949"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
