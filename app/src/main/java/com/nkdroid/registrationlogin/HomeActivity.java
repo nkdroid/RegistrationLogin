@@ -26,8 +26,11 @@ public class HomeActivity extends ActionBarActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //remove sharedpreference
+                PrefUtils.clearLogin(HomeActivity.this);
                 Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

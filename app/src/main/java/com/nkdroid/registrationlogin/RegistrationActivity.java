@@ -40,8 +40,14 @@ public class RegistrationActivity extends ActionBarActivity {
                 } else if(isEmptyField(etPassword)){
                     Toast.makeText(RegistrationActivity.this,"Please Enter Password",Toast.LENGTH_LONG).show();
                 } else {
-                    Intent intent = new Intent(RegistrationActivity.this, VerifyActivity.class);
+
+                    //store in shared preference
+                    PrefUtils.setLoggedIn(RegistrationActivity.this, true, etUsername.getText().toString().trim(), etPassword.getText().toString().trim());
+                    Intent intent = new Intent(RegistrationActivity.this, HomeActivity.class);
+
                     startActivity(intent);
+                    finish();
+
                 }
 
             }
@@ -56,5 +62,14 @@ public class RegistrationActivity extends ActionBarActivity {
             isEmpty = true;
         }
         return isEmpty;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+
+        startActivity(intent);
+        finish();
     }
 }
